@@ -1,0 +1,10 @@
+{
+    "name": "FullStackTest",
+    "platform": "HTML",
+    "version": "1.0.0",
+    "wabVersion": "2.9",
+    "author": "Siyu Fan",
+    "description": "FullStackTest for Zesty.ai",
+    "copyright": "",
+    "license": "Siyu Fan License"
+}

@@ -1,0 +1,490 @@
+.bootstrap-test h3 {
+    font-size: 1.2em;
+}
+
+.bootstrap-test h3,
+p {
+    margin-top: 0;
+}
+
+.dropdown-menu {
+    min-width: 330px;
+    text-align: left;
+}
+
+.dropdown-toggle {
+    min-width: 100%;
+    min-height: 50px;
+    text-align: left;
+    margin-top: 10;
+}
+
+.dropdown-menu > li > a {
+    text-align: left;
+    padding: 5px 15px;
+    font-weight: 300;
+}
+
+.btn {
+    /* just for this demo. */
+    margin-top: 9px;
+}
+
+.btn-arrow-right,
+.btn-arrow-left {
+    position: relative;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.btn-arrow-right {
+    padding-left: 36px;
+}
+
+.btn-arrow-left {
+    padding-right: 36px;
+}
+
+.btn-arrow-right:before,
+.btn-arrow-right:after,
+.btn-arrow-left:before,
+.btn-arrow-left:after {
+    /* make two squares (before and after), looking similar to the button */
+    content: "";
+    position: absolute;
+    top: 5px;
+    /* move it down because of rounded corners */
+    width: 22px;
+    /* same as height */
+    height: 22px;
+    /* button_outer_height / sqrt(2) */
+    background: inherit;
+    /* use parent background */
+    border: inherit;
+    /* use parent border */
+    border-left-color: transparent;
+    /* hide left border */
+    border-bottom-color: transparent;
+    /* hide bottom border */
+    border-radius: 0px 4px 0px 0px;
+    /* round arrow corner, the shorthand property doesn't accept "inherit" so it is set to 4px */
+    -webkit-border-radius: 0px 4px 0px 0px;
+    -moz-border-radius: 0px 4px 0px 0px;
+}
+
+.btn-arrow-right:before,
+.btn-arrow-right:after {
+    transform: rotate(45deg);
+    /* rotate right arrow squares 45 deg to point right */
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+
+.btn-arrow-left:before,
+.btn-arrow-left:after {
+    transform: rotate(225deg);
+    /* rotate left arrow squares 225 deg to point left */
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+}
+
+.btn-arrow-right:before,
+.btn-arrow-left:before {
+    /* align the "before" square to the left */
+    left: -11px;
+}
+
+.btn-arrow-right:after,
+.btn-arrow-left:after {
+    /* align the "after" square to the right */
+    right: -11px;
+}
+
+.btn-arrow-right:after,
+.btn-arrow-left:before {
+    /* bring arrow pointers to front */
+    z-index: 1;
+}
+
+.btn-arrow-right:before,
+.btn-arrow-left:after {
+    /* hide arrow tails background */
+    background-color: white;
+}
+
+/* add additional custom styles */
+
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+.btn-ViewButtons {
+    /* just for this demo. */
+    margin-top: 3px;
+}
+
+.btn-Tools {
+    /* just for this demo. */
+    margin-top: px;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+/*
+	for division dropdownlist
+	*/
+
+.span3 {
+    height: 500px !important;
+    overflow: auto;
+}
+
+.title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.selectedLabel {
+    font-size: 12px;
+}
+
+.value {
+    font-size: 12px;
+    width: 100px;
+}
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 5px 5px;
+}
+
+.form-control-divison {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #3E3939;
+    background-color: #FFFFFF;
+    background-image: none;
+    border: 2px solid #428BCA;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-group-Divison {
+    margin-bottom: 3px;
+    background-color: rgba(117, 199, 202, 0.37);
+    height: 50px;
+}
+
+.form-group-Widget-Title {
+    background-color: #777777;
+    height: 50px;
+}
+
+.form-group-Widget-Title-FollowUpWos {
+    background-color: #84848e;
+    height: 90px;
+}
+
+.form-group-Widget-Details {
+    background-color: rgba(9, 10, 10, 0.55);
+    height: 50px;
+}
+
+@-webkit-keyframes spin2 {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+
+    to {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+.dropdown-menu.columns-2 {
+    min-width: 400px;
+}
+
+.dropdown-menu.columns-3 {
+    min-width: 600px;
+}
+
+/*.dropdown-menu li a {} */
+
+.multi-column-dropdown {
+    list-style: none;
+}
+
+.multi-column-dropdown li a {
+    display: block;
+    clear: both;
+    line-height: 1.428571429;
+    color: #333;
+    white-space: normal;
+}
+
+.multi-column-dropdown li a:hover {
+    text-decoration: none;
+    color: #262626;
+    background-color: #f5f5f5;
+}
+
+.control-label-t {
+    color: #d00;
+}
+
+.removed-label-t {
+    color: #337ab7;
+}
+
+.form-group.required .control-label:after {
+    color: #d00;
+    content: "*";
+    position: absolute;
+    margin-left: 8px;
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+
+.sf-Title {
+    font: 24px;
+    color: #272861;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sf-SectionTitle {
+    font: 16px;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sf-SectionSubTitle {
+    font: 14px;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sf-Label {
+    font: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.sf-button {
+    font: 12px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.sf-Text {
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.sf-Option {
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.sf-form-control {
+    display: block;
+    width: 30%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.btn-default-clearDraw {
+    margin-top: 0px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    width: 40px;
+    height: 40px;
+}
+
+.btn-default-selectSearch {
+    margin-top: 33px;
+    margin-left: 10px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    width: 50px;
+    height: 50px;
+}
+
+.input-customer {
+    margin-right: 5px;
+    width: 70px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #3E3939;
+    background-color: #FFFFFF;
+    background-image: none;
+    border: 1px solid #919FAD;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.input-phone {
+    margin-right: 5px;
+    width: 150px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #3E3939;
+    background-color: #FFFFFF;
+    background-image: none;
+    border: 1px solid #919FAD;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.input-benchmark {
+    margin-right: 5px;
+    width: 70px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #3E3939;
+    background-color: #FFFFFF;
+    background-image: none;
+    border: 1px solid #919FAD;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.jimu-draw-box .draw-item.jimu-state-active {
+    background-color: #DDDDDD;
+    border: 2px solid #337ab7;
+}
+
+
+.jimu-draw-box .draw-item {
+    font-family: "launchpad-icons" !important;
+    content: attr(data-icon);
+    font-size: 16px;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    /* line-height: 1; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px;
+    background-color: #fff;
+    width: 100%;
+    height: 40px;
+    /* margin: 5px; */
+    border: 2px solid #ddd;
+    /* color: #6d6e70; */
+    padding: 4px;
+    -webkit-border-radius: 2px;
+    border-radius: 5px;
+}
+
+.claro .jimu-draw-box .draw-item {
+    font-family: "launchpad-icons" !important;
+    content: attr(data-icon);
+    font-size: 16px;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    /* line-height: 1; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px;
+    background-color: #fff;
+    width: 100%;
+    height: 40px;
+    /* margin: 5px; */
+    border: 2px solid #ddd;
+    /* color: #6d6e70; */
+    padding: 4px;
+    -webkit-border-radius: 2px;
+    border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+    .dropdown-menu.multi-column {
+        min-width: 240px !important;
+        overflow-x: hidden;
+    }
+}

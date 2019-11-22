@@ -1,0 +1,76 @@
+<div>
+    <div class="" data-dojo-attach-point="widgetContainer">
+
+        <div class="alert alert-danger" data-dojo-attach-point="alertInputError" style="display: none">
+            <strong>Please type in your search keywords first.</strong>
+        </div>
+
+        <div class="">
+            <!--Logo-->
+            <img src="widgets/FullStackTest/images/FINAL-03.png" class="img-responsive" width="100%" height="100%" style="margin-bottom: 20px;background: #333333;max-width: 500px" />
+
+            <!--Search criteria-->
+            <label class="sf-Label" style="margin-bottom: 20px;">Please type in your search criteria.</label>
+
+            <input style="width:100%;margin-bottom: 10px;" data-dojo-attach-point="inputLongitude" class="form-control" placeholder="Longitude" value="-80.0782213" required />
+            <input style="width:100%;margin-bottom: 10px;" data-dojo-attach-point="inputLatitude" class="form-control" placeholder="Latitude" value="26.8849731" required />
+
+            <!--Using input group for radius and unit-->
+            <div class="input-group">
+                <input type="text" class="form-control" data-dojo-attach-point="inputRadius" placeholder="Search Radius" aria-label="Radius" value="1000">
+                <span class="input-group-addon">Meters</span>
+            </div>
+            <hr class="light">
+
+            <button class="btn btn-lg btn-success btn-block" data-dojo-attach-point="btnSearch" data-dojo-attach-event="onclick:_onBtnSearchRecord" style="width:100%;">Search</button>
+        </div>
+
+        <!--Select from Map and Clear section-->
+        <div>
+            <div data-dojo-attach-point="drawBox" data-dojo-type="widgets/FullStackTest/DrawBoxRec" data-dojo-props='types:["polygon"],showClear:false' style="margin-top:5px;"></div>
+
+            <button class="btn btn-lg btn-info btn-block" data-dojo-attach-point="btnClear" data-dojo-attach-event="onclick:_onBtnClearAllClicked" style="width:100%;">Clear</button>
+        </div>
+
+
+        <!--Select Record List Table-->
+        <div data-dojo-attach-point="selectedRecordDiv" class="span3" style="margin-top: 10px;">
+        </div>
+
+
+        <!--Details Section-->
+        <div data-dojo-attach-point="detailsPanel" style="margin-top: 10px; display: none">
+            <!--Record Navigation-->
+            <div data-dojo-attach-point="detailsButtons">
+                <table>
+                    <tr class="form-group-Widget-Details">
+                        <td style="width:50px;">
+                            <button data-dojo-attach-event="onclick:_onBtnCloseDetailsClicked" data-toggle="tooltip" data-original-title="Clear" type="button" class="btn btn-link "><span class="glyphicon glyphicon-remove text-left text-white"></span>
+                            </button>
+                        </td>
+                        <td>
+                            <button data-dojo-attach-point="PrevBtn" data-dojo-attach-event="onclick:_onBtnPrevDetailsClicked" data-toggle="tooltip" data-original-title="Clear" type="button" class="btn btn-link "><span class="glyphicon glyphicon-chevron-left text-left text-white"></span>
+                            </button>
+                        </td>
+                        <td width="100%">
+                            <button data-dojo-attach-point="NextBtn" data-dojo-attach-event="onclick:_onBtnNextDetailsClicked" data-toggle="" data-original-title="Clear" type="button" class="btn btn-link "><span class="glyphicon glyphicon-chevron-right text-left text-white"></span>
+                            </button>
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+
+            <!--Image and Statistics-->
+            <div data-dojo-attach-point="detailsWODiv" class="span3">
+                <br />
+                <label data-dojo-attach-point="lblPropertyID"></label>
+                <image id="imgPropertyDisplay" data-dojo-attach-point="imgPropertyDisplay" style="width:100%;height: expression(this.width > this.height ? this.height: this.width);"></image>
+                <hr class="light">
+                <label><strong>Property Statistics :</strong></label>
+                <hr class="light">
+                <table class="table table-hover table-striped" data-dojo-attach-point="viewDetailsTable" data-card-view="true" style="margin-top: 0px;">
+                </table>
+            </div>
+        </div>
+    </div>
